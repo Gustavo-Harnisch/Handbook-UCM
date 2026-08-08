@@ -1,29 +1,29 @@
 # 📚 UCM Competitive Programming Handbook
 
-Colección de algoritmos, estructuras de datos y recursos para
-programación competitiva, mantenida por estudiantes de la
-Universidad Católica del Maule (UCM).
+Handbook de programación competitiva desarrollado por estudiantes de la Universidad Católica del Maule (UCM).
 
-## 🎯 Objetivos
-...
+Contiene algoritmos, estructuras de datos, técnicas y material de referencia para el estudio y preparación de competencias de programación.
 
-## 📖 Contenidos
-...
+## 🌐 Web
 
-## 🤝 Contribuir
-...
+Puedes acceder a la versión web del handbook aquí:
+
+👉 https://gustavo-harnisch.github.io/Handbook-UCM/
+
+La documentación está escrita en Markdown, generada con MkDocs y publicada mediante GitHub Pages.
 
 ## 🙏 Acknowledgements
 
-Este proyecto está basado en el USM Competitive Programming Handbook,
-desarrollado por la comunidad de Programación Competitiva de la
-Universidad Técnica Federico Santa María (UTFSM).
+Este proyecto utiliza como base y referencia el **USM Competitive Programming Handbook**, desarrollado por la comunidad de Programación Competitiva de la Universidad Técnica Federico Santa María (UTFSM).
 
-Original:
+Repositorio original:
+
 https://github.com/ProgramacionCompetitivaUTFSM/Handbook-USM
 
-El proyecto original está distribuido bajo licencia MIT.
+Agradecemos a sus autores y colaboradores por compartir su trabajo con la comunidad. El proyecto original está distribuido bajo licencia MIT.
 
 ## 📄 License
 
-MIT License. See LICENSE for details.
+Este proyecto está distribuido bajo la licencia MIT.
+
+Consulta [`LICENSE`](LICENSE) para más información.
