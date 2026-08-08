@@ -1,0 +1,32 @@
+site_name: UCM Competitive Programming Handbook
+site_description: Handbook de programación competitiva - beta web/PDF
+site_author: UCM Competitive Programming
+
+docs_dir: content
+site_dir: dist/site
+
+repo_name: ucm-competitive-programming/handbook
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+
+nav:
+  - Inicio: index.md
+  - Fundamentos:
+      - Complejidad: complexity.md
+  - Estructuras de datos:
+      - Fenwick Tree: data-structures/fenwick-tree.md
+  - Grafos:
+      - Dijkstra: graphs/dijkstra.md
+
+markdown_extensions:
+  - tables
+  - fenced_code
+  - toc:
+      permalink: true

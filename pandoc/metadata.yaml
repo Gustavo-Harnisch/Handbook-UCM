@@ -1,0 +1,18 @@
+---
+title: "UCM Competitive Programming Handbook"
+subtitle: "Beta - misma fuente Markdown para Web y PDF"
+author: "UCM Competitive Programming"
+date: ""
+lang: es-CL
+documentclass: article
+fontsize: 10pt
+geometry:
+  - margin=1.8cm
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+toc: true
+toc-title: "Índice"
+toc-depth: 3
+numbersections: true
+---
