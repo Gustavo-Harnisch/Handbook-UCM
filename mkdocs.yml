@@ -5,7 +5,8 @@ site_author: UCM Competitive Programming
 docs_dir: content
 site_dir: dist/site
 
-repo_name: ucm-competitive-programming/handbook
+repo_name: Gustavo-Harnisch/Handbook-UCM
+repo_url: https://github.com/Gustavo-Harnisch/Handbook-UCM
 
 theme:
   name: material
@@ -18,10 +19,13 @@ theme:
 
 nav:
   - Inicio: index.md
+
   - Fundamentos:
       - Complejidad: complexity.md
+
   - Estructuras de datos:
       - Fenwick Tree: data-structures/fenwick-tree.md
+
   - Grafos:
       - Dijkstra: graphs/dijkstra.md
 
