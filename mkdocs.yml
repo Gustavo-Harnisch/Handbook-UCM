@@ -1,6 +1,7 @@
 site_name: UCM Competitive Programming Handbook
-site_description: Handbook de programación competitiva - beta web/PDF
+site_description: Algoritmos, estructuras de datos y técnicas para programación competitiva
 site_author: UCM Competitive Programming
+site_url: https://gustavo-harnisch.github.io/Handbook-UCM/
 
 docs_dir: content
 site_dir: dist/site
@@ -11,26 +12,260 @@ repo_url: https://github.com/Gustavo-Harnisch/Handbook-UCM
 theme:
   name: material
   language: es
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/code-braces
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
   features:
+    - navigation.instant
     - navigation.sections
+    - navigation.indexes
     - navigation.top
+    - navigation.footer
+    - navigation.path
+    - search.suggest
+    - search.highlight
     - content.code.copy
+    - content.code.annotate
     - toc.follow
+
+plugins:
+  - search:
+      lang: es
 
 nav:
   - Inicio: index.md
+  - "Preface": 00-preface/index.md
+  - "Créditos UTFSM": 00-preface/credits.md
 
-  - Fundamentos:
-      - Complejidad: complexity.md
+  - "Part I: Basic techniques":
+      - Overview: part-01-basic-techniques/index.md
+      - "1 Introduction":
+          - Chapter: part-01-basic-techniques/01-introduction/index.md
+          - "1.1 Programming languages": part-01-basic-techniques/01-introduction/01-programming-languages/index.md
+          - "1.2 Input and output": part-01-basic-techniques/01-introduction/02-input-and-output/index.md
+          - "1.3 Working with numbers": part-01-basic-techniques/01-introduction/03-working-with-numbers/index.md
+          - "1.4 Shortening code": part-01-basic-techniques/01-introduction/04-shortening-code/index.md
+          - "1.5 Mathematics": part-01-basic-techniques/01-introduction/05-mathematics/index.md
+          - "1.6 Contests and resources": part-01-basic-techniques/01-introduction/06-contests-and-resources/index.md
+      - "2 Time complexity":
+          - Chapter: part-01-basic-techniques/02-time-complexity/index.md
+          - "2.1 Calculation rules": part-01-basic-techniques/02-time-complexity/01-calculation-rules/index.md
+          - "2.2 Complexity classes": part-01-basic-techniques/02-time-complexity/02-complexity-classes/index.md
+          - "2.3 Estimating efficiency": part-01-basic-techniques/02-time-complexity/03-estimating-efficiency/index.md
+          - "2.4 Maximum subarray sum": part-01-basic-techniques/02-time-complexity/04-maximum-subarray-sum/index.md
+      - "3 Sorting":
+          - Chapter: part-01-basic-techniques/03-sorting/index.md
+          - "3.1 Sorting theory": part-01-basic-techniques/03-sorting/01-sorting-theory/index.md
+          - "3.2 Sorting in C++": part-01-basic-techniques/03-sorting/02-sorting-in-cpp/index.md
+          - "3.3 Binary search": part-01-basic-techniques/03-sorting/03-binary-search/index.md
+      - "4 Data structures":
+          - Chapter: part-01-basic-techniques/04-data-structures/index.md
+          - "4.1 Dynamic arrays": part-01-basic-techniques/04-data-structures/01-dynamic-arrays/index.md
+          - "4.2 Set structures": part-01-basic-techniques/04-data-structures/02-set-structures/index.md
+          - "4.3 Map structures": part-01-basic-techniques/04-data-structures/03-map-structures/index.md
+          - "4.4 Iterators and ranges": part-01-basic-techniques/04-data-structures/04-iterators-and-ranges/index.md
+          - "4.5 Other structures": part-01-basic-techniques/04-data-structures/05-other-structures/index.md
+          - "4.6 Comparison to sorting": part-01-basic-techniques/04-data-structures/06-comparison-to-sorting/index.md
+      - "5 Complete search":
+          - Chapter: part-01-basic-techniques/05-complete-search/index.md
+          - "5.1 Generating subsets": part-01-basic-techniques/05-complete-search/01-generating-subsets/index.md
+          - "5.2 Generating permutations": part-01-basic-techniques/05-complete-search/02-generating-permutations/index.md
+          - "5.3 Backtracking": part-01-basic-techniques/05-complete-search/03-backtracking/index.md
+          - "5.4 Pruning the search": part-01-basic-techniques/05-complete-search/04-pruning-the-search/index.md
+          - "5.5 Meet in the middle": part-01-basic-techniques/05-complete-search/05-meet-in-the-middle/index.md
+      - "6 Greedy algorithms":
+          - Chapter: part-01-basic-techniques/06-greedy-algorithms/index.md
+          - "6.1 Coin problem": part-01-basic-techniques/06-greedy-algorithms/01-coin-problem/index.md
+          - "6.2 Scheduling": part-01-basic-techniques/06-greedy-algorithms/02-scheduling/index.md
+          - "6.3 Tasks and deadlines": part-01-basic-techniques/06-greedy-algorithms/03-tasks-and-deadlines/index.md
+          - "6.4 Minimizing sums": part-01-basic-techniques/06-greedy-algorithms/04-minimizing-sums/index.md
+          - "6.5 Data compression": part-01-basic-techniques/06-greedy-algorithms/05-data-compression/index.md
+      - "7 Dynamic programming":
+          - Chapter: part-01-basic-techniques/07-dynamic-programming/index.md
+          - "7.1 Coin problem": part-01-basic-techniques/07-dynamic-programming/01-coin-problem/index.md
+          - "7.2 Longest increasing subsequence": part-01-basic-techniques/07-dynamic-programming/02-longest-increasing-subsequence/index.md
+          - "7.3 Paths in a grid": part-01-basic-techniques/07-dynamic-programming/03-paths-in-a-grid/index.md
+          - "7.4 Knapsack problems": part-01-basic-techniques/07-dynamic-programming/04-knapsack-problems/index.md
+          - "7.5 Edit distance": part-01-basic-techniques/07-dynamic-programming/05-edit-distance/index.md
+          - "7.6 Counting tilings": part-01-basic-techniques/07-dynamic-programming/06-counting-tilings/index.md
+          - "Complemento UTFSM: DP avanzada": part-01-basic-techniques/07-dynamic-programming/07-advanced-optimizations/index.md
+      - "8 Amortized analysis":
+          - Chapter: part-01-basic-techniques/08-amortized-analysis/index.md
+          - "8.1 Two pointers method": part-01-basic-techniques/08-amortized-analysis/01-two-pointers-method/index.md
+          - "8.2 Nearest smaller elements": part-01-basic-techniques/08-amortized-analysis/02-nearest-smaller-elements/index.md
+          - "8.3 Sliding window minimum": part-01-basic-techniques/08-amortized-analysis/03-sliding-window-minimum/index.md
+      - "9 Range queries":
+          - Chapter: part-01-basic-techniques/09-range-queries/index.md
+          - "9.1 Static array queries": part-01-basic-techniques/09-range-queries/01-static-array-queries/index.md
+          - "9.2 Binary indexed tree": part-01-basic-techniques/09-range-queries/02-binary-indexed-tree/index.md
+          - "9.3 Segment tree": part-01-basic-techniques/09-range-queries/03-segment-tree/index.md
+          - "9.4 Additional techniques": part-01-basic-techniques/09-range-queries/04-additional-techniques/index.md
+          - "Complemento UTFSM: estructuras avanzadas": part-01-basic-techniques/09-range-queries/05-advanced-data-structures/index.md
+      - "10 Bit manipulation":
+          - Chapter: part-01-basic-techniques/10-bit-manipulation/index.md
+          - "10.1 Bit representation": part-01-basic-techniques/10-bit-manipulation/01-bit-representation/index.md
+          - "10.2 Bit operations": part-01-basic-techniques/10-bit-manipulation/02-bit-operations/index.md
+          - "10.3 Representing sets": part-01-basic-techniques/10-bit-manipulation/03-representing-sets/index.md
+          - "10.4 Bit optimizations": part-01-basic-techniques/10-bit-manipulation/04-bit-optimizations/index.md
+          - "10.5 Dynamic programming": part-01-basic-techniques/10-bit-manipulation/05-dynamic-programming/index.md
 
-  - Estructuras de datos:
-      - Fenwick Tree: data-structures/fenwick-tree.md
+  - "Part II: Graph algorithms":
+      - Overview: part-02-graph-algorithms/index.md
+      - "11 Basics of graphs":
+          - Chapter: part-02-graph-algorithms/11-basics-of-graphs/index.md
+          - "11.1 Graph terminology": part-02-graph-algorithms/11-basics-of-graphs/01-graph-terminology/index.md
+          - "11.2 Graph representation": part-02-graph-algorithms/11-basics-of-graphs/02-graph-representation/index.md
+      - "12 Graph traversal":
+          - Chapter: part-02-graph-algorithms/12-graph-traversal/index.md
+          - "12.1 Depth-first search": part-02-graph-algorithms/12-graph-traversal/01-depth-first-search/index.md
+          - "12.2 Breadth-first search": part-02-graph-algorithms/12-graph-traversal/02-breadth-first-search/index.md
+          - "12.3 Applications": part-02-graph-algorithms/12-graph-traversal/03-applications/index.md
+      - "13 Shortest paths":
+          - Chapter: part-02-graph-algorithms/13-shortest-paths/index.md
+          - "13.1 Bellman–Ford algorithm": part-02-graph-algorithms/13-shortest-paths/01-bellman-ford-algorithm/index.md
+          - "13.2 Dijkstra's algorithm": part-02-graph-algorithms/13-shortest-paths/02-dijkstra-algorithm/index.md
+          - "13.3 Floyd–Warshall algorithm": part-02-graph-algorithms/13-shortest-paths/03-floyd-warshall-algorithm/index.md
+      - "14 Tree algorithms":
+          - Chapter: part-02-graph-algorithms/14-tree-algorithms/index.md
+          - "14.1 Tree traversal": part-02-graph-algorithms/14-tree-algorithms/01-tree-traversal/index.md
+          - "14.2 Diameter": part-02-graph-algorithms/14-tree-algorithms/02-diameter/index.md
+          - "14.3 All longest paths": part-02-graph-algorithms/14-tree-algorithms/03-all-longest-paths/index.md
+          - "14.4 Binary trees": part-02-graph-algorithms/14-tree-algorithms/04-binary-trees/index.md
+      - "15 Spanning trees":
+          - Chapter: part-02-graph-algorithms/15-spanning-trees/index.md
+          - "15.1 Kruskal's algorithm": part-02-graph-algorithms/15-spanning-trees/01-kruskal-algorithm/index.md
+          - "15.2 Union-find structure": part-02-graph-algorithms/15-spanning-trees/02-union-find-structure/index.md
+          - "15.3 Prim's algorithm": part-02-graph-algorithms/15-spanning-trees/03-prim-algorithm/index.md
+      - "16 Directed graphs":
+          - Chapter: part-02-graph-algorithms/16-directed-graphs/index.md
+          - "16.1 Topological sorting": part-02-graph-algorithms/16-directed-graphs/01-topological-sorting/index.md
+          - "16.2 Dynamic programming": part-02-graph-algorithms/16-directed-graphs/02-dynamic-programming/index.md
+          - "16.3 Successor paths": part-02-graph-algorithms/16-directed-graphs/03-successor-paths/index.md
+          - "16.4 Cycle detection": part-02-graph-algorithms/16-directed-graphs/04-cycle-detection/index.md
+      - "17 Strong connectivity":
+          - Chapter: part-02-graph-algorithms/17-strong-connectivity/index.md
+          - "17.1 Kosaraju's algorithm": part-02-graph-algorithms/17-strong-connectivity/01-kosaraju-algorithm/index.md
+          - "17.2 2SAT problem": part-02-graph-algorithms/17-strong-connectivity/02-2sat-problem/index.md
+      - "18 Tree queries":
+          - Chapter: part-02-graph-algorithms/18-tree-queries/index.md
+          - "18.1 Finding ancestors": part-02-graph-algorithms/18-tree-queries/01-finding-ancestors/index.md
+          - "18.2 Subtrees and paths": part-02-graph-algorithms/18-tree-queries/02-subtrees-and-paths/index.md
+          - "18.3 Lowest common ancestor": part-02-graph-algorithms/18-tree-queries/03-lowest-common-ancestor/index.md
+          - "18.4 Offline algorithms": part-02-graph-algorithms/18-tree-queries/04-offline-algorithms/index.md
+          - "Complemento UTFSM: árboles avanzados": part-02-graph-algorithms/18-tree-queries/05-advanced-tree-queries/index.md
+      - "19 Paths and circuits":
+          - Chapter: part-02-graph-algorithms/19-paths-and-circuits/index.md
+          - "19.1 Eulerian paths": part-02-graph-algorithms/19-paths-and-circuits/01-eulerian-paths/index.md
+          - "19.2 Hamiltonian paths": part-02-graph-algorithms/19-paths-and-circuits/02-hamiltonian-paths/index.md
+          - "19.3 De Bruijn sequences": part-02-graph-algorithms/19-paths-and-circuits/03-de-bruijn-sequences/index.md
+          - "19.4 Knight's tours": part-02-graph-algorithms/19-paths-and-circuits/04-knight-tours/index.md
+      - "20 Flows and cuts":
+          - Chapter: part-02-graph-algorithms/20-flows-and-cuts/index.md
+          - "20.1 Ford–Fulkerson algorithm": part-02-graph-algorithms/20-flows-and-cuts/01-ford-fulkerson-algorithm/index.md
+          - "20.2 Disjoint paths": part-02-graph-algorithms/20-flows-and-cuts/02-disjoint-paths/index.md
+          - "20.3 Maximum matchings": part-02-graph-algorithms/20-flows-and-cuts/03-maximum-matchings/index.md
+          - "20.4 Path covers": part-02-graph-algorithms/20-flows-and-cuts/04-path-covers/index.md
+          - "Complemento UTFSM: flujos y matching": part-02-graph-algorithms/20-flows-and-cuts/05-advanced-flows-and-matching/index.md
 
-  - Grafos:
-      - Dijkstra: graphs/dijkstra.md
+  - "Part III: Advanced topics":
+      - Overview: part-03-advanced-topics/index.md
+      - "21 Number theory":
+          - Chapter: part-03-advanced-topics/21-number-theory/index.md
+          - "21.1 Primes and factors": part-03-advanced-topics/21-number-theory/01-primes-and-factors/index.md
+          - "21.2 Modular arithmetic": part-03-advanced-topics/21-number-theory/02-modular-arithmetic/index.md
+          - "21.3 Solving equations": part-03-advanced-topics/21-number-theory/03-solving-equations/index.md
+          - "21.4 Other results": part-03-advanced-topics/21-number-theory/04-other-results/index.md
+          - "Complemento UTFSM: teoría de números": part-03-advanced-topics/21-number-theory/05-advanced-number-theory/index.md
+      - "22 Combinatorics":
+          - Chapter: part-03-advanced-topics/22-combinatorics/index.md
+          - "22.1 Binomial coefficients": part-03-advanced-topics/22-combinatorics/01-binomial-coefficients/index.md
+          - "22.2 Catalan numbers": part-03-advanced-topics/22-combinatorics/02-catalan-numbers/index.md
+          - "22.3 Inclusion-exclusion": part-03-advanced-topics/22-combinatorics/03-inclusion-exclusion/index.md
+          - "22.4 Burnside's lemma": part-03-advanced-topics/22-combinatorics/04-burnside-lemma/index.md
+          - "22.5 Cayley's formula": part-03-advanced-topics/22-combinatorics/05-cayley-formula/index.md
+      - "23 Matrices":
+          - Chapter: part-03-advanced-topics/23-matrices/index.md
+          - "23.1 Operations": part-03-advanced-topics/23-matrices/01-operations/index.md
+          - "23.2 Linear recurrences": part-03-advanced-topics/23-matrices/02-linear-recurrences/index.md
+          - "23.3 Graphs and matrices": part-03-advanced-topics/23-matrices/03-graphs-and-matrices/index.md
+          - "Complemento UTFSM: multiplicación de polinomios": part-03-advanced-topics/23-matrices/04-fast-polynomial-multiplication/index.md
+      - "24 Probability":
+          - Chapter: part-03-advanced-topics/24-probability/index.md
+          - "24.1 Calculation": part-03-advanced-topics/24-probability/01-calculation/index.md
+          - "24.2 Events": part-03-advanced-topics/24-probability/02-events/index.md
+          - "24.3 Random variables": part-03-advanced-topics/24-probability/03-random-variables/index.md
+          - "24.4 Markov chains": part-03-advanced-topics/24-probability/04-markov-chains/index.md
+          - "24.5 Randomized algorithms": part-03-advanced-topics/24-probability/05-randomized-algorithms/index.md
+      - "25 Game theory":
+          - Chapter: part-03-advanced-topics/25-game-theory/index.md
+          - "25.1 Game states": part-03-advanced-topics/25-game-theory/01-game-states/index.md
+          - "25.2 Nim game": part-03-advanced-topics/25-game-theory/02-nim-game/index.md
+          - "25.3 Sprague–Grundy theorem": part-03-advanced-topics/25-game-theory/03-sprague-grundy-theorem/index.md
+      - "26 String algorithms":
+          - Chapter: part-03-advanced-topics/26-string-algorithms/index.md
+          - "26.1 String terminology": part-03-advanced-topics/26-string-algorithms/01-string-terminology/index.md
+          - "26.2 Trie structure": part-03-advanced-topics/26-string-algorithms/02-trie-structure/index.md
+          - "26.3 String hashing": part-03-advanced-topics/26-string-algorithms/03-string-hashing/index.md
+          - "26.4 Z-algorithm": part-03-advanced-topics/26-string-algorithms/04-z-algorithm/index.md
+          - "Complemento UTFSM: strings avanzados": part-03-advanced-topics/26-string-algorithms/05-advanced-string-algorithms/index.md
+      - "27 Square root algorithms":
+          - Chapter: part-03-advanced-topics/27-square-root-algorithms/index.md
+          - "27.1 Combining algorithms": part-03-advanced-topics/27-square-root-algorithms/01-combining-algorithms/index.md
+          - "27.2 Integer partitions": part-03-advanced-topics/27-square-root-algorithms/02-integer-partitions/index.md
+          - "27.3 Mo's algorithm": part-03-advanced-topics/27-square-root-algorithms/03-mo-algorithm/index.md
+      - "28 Segment trees revisited":
+          - Chapter: part-03-advanced-topics/28-segment-trees-revisited/index.md
+          - "28.1 Lazy propagation": part-03-advanced-topics/28-segment-trees-revisited/01-lazy-propagation/index.md
+          - "28.2 Dynamic trees": part-03-advanced-topics/28-segment-trees-revisited/02-dynamic-trees/index.md
+          - "28.3 Data structures": part-03-advanced-topics/28-segment-trees-revisited/03-data-structures/index.md
+          - "28.4 Two-dimensionality": part-03-advanced-topics/28-segment-trees-revisited/04-two-dimensionality/index.md
+      - "29 Geometry":
+          - Chapter: part-03-advanced-topics/29-geometry/index.md
+          - "29.1 Complex numbers": part-03-advanced-topics/29-geometry/01-complex-numbers/index.md
+          - "29.2 Points and lines": part-03-advanced-topics/29-geometry/02-points-and-lines/index.md
+          - "29.3 Polygon area": part-03-advanced-topics/29-geometry/03-polygon-area/index.md
+          - "29.4 Distance functions": part-03-advanced-topics/29-geometry/04-distance-functions/index.md
+          - "Complemento UTFSM: geometría avanzada": part-03-advanced-topics/29-geometry/05-advanced-geometry/index.md
+      - "30 Sweep line algorithms":
+          - Chapter: part-03-advanced-topics/30-sweep-line-algorithms/index.md
+          - "30.1 Intersection points": part-03-advanced-topics/30-sweep-line-algorithms/01-intersection-points/index.md
+          - "30.2 Closest pair problem": part-03-advanced-topics/30-sweep-line-algorithms/02-closest-pair-problem/index.md
+          - "30.3 Convex hull problem": part-03-advanced-topics/30-sweep-line-algorithms/03-convex-hull-problem/index.md
+
+  - "Bibliography": 99-bibliography/index.md
 
 markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
   - tables
-  - fenced_code
   - toc:
       permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: !relative $config_dir
+      check_paths: true
+
+watch:
+  - snippets
