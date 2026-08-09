@@ -1,5 +1,5 @@
 # Créditos de implementaciones UTFSM
 
-Los complementos marcados como UTFSM parten de implementaciones del Handbook de Programación Competitiva UTFSM. Cada snippet indica junto al código a la persona acreditada por la implementación de referencia.
+Algunos códigos de este handbook usan como referencia implementaciones del Handbook de Programación Competitiva UTFSM. Reconocemos a sus autores como las personas detrás de la idea y la implementación de esos códigos; por eso su nombre aparece junto a cada fragmento utilizado.
 
-La tabla completa, con el archivo UCM y su archivo de origen, está disponible en [`snippets/ATTRIBUTION.md`](https://github.com/Gustavo-Harnisch/Handbook-UCM/blob/main/snippets/ATTRIBUTION.md). El material de referencia se distribuye bajo licencia MIT.
+Puedes ver el listado de códigos y sus autores en [`snippets/ATTRIBUTION.md`](https://github.com/Gustavo-Harnisch/Handbook-UCM/blob/main/snippets/ATTRIBUTION.md). El material de referencia se distribuye bajo licencia MIT.

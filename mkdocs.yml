@@ -32,6 +32,8 @@ theme:
         name: Cambiar a modo claro
   features:
     - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.top
@@ -43,13 +45,18 @@ theme:
     - content.code.annotate
     - toc.follow
 
+extra_css:
+  - assets/stylesheets/extra.css
+
+copyright: Hecho para aprender, practicar y compartir programación competitiva.
+
 plugins:
   - search:
       lang: es
 
 nav:
   - Inicio: index.md
-  - "Preface": 00-preface/index.md
+  - "Prefacio": 00-preface/index.md
   - "Créditos UTFSM": 00-preface/credits.md
 
   - "Part I: Basic techniques":

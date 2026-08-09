@@ -1,8 +1,8 @@
-# Reconocimiento de implementaciones UTFSM
+# Reconocimiento de códigos UTFSM
 
-Los snippets indicados abajo se revisaron y reestructuraron para que fueran independientes, compatibles con C++17 y documentados con contratos explícitos. Su implementación de referencia proviene del [Handbook de Programación Competitiva UTFSM](https://github.com/ProgramacionCompetitivaUTFSM/Handbook-USM).
+Los códigos de esta tabla fueron utilizados como referencia desde el [Handbook de Programación Competitiva UTFSM](https://github.com/ProgramacionCompetitivaUTFSM/Handbook-USM).
 
-El nombre acreditado corresponde a la autoría declarada en el archivo de origen o, si el archivo no declara una, a la persona que incorporó esa implementación al repositorio UTFSM. No atribuye los algoritmos en sí, que pueden tener otros autores académicos.
+La autoría intelectual de cada implementación de referencia se reconoce a la persona indicada. Por esta razón, su nombre se menciona junto al código correspondiente como agradecimiento por su trabajo.
 
 | Snippet UCM | Archivo de referencia UTFSM | Crédito UTFSM |
 | --- | --- | --- |
@@ -24,9 +24,4 @@ El nombre acreditado corresponde a la autoría declarada en el archivo de origen
 | `strings/manacher.cpp` | `content/strings/advanced/manacher.cpp` | Sebastián Torrealba |
 | `strings/suffix-array.cpp` | `content/strings/advanced/suffix-array.cpp` | Sebastián Torrealba |
 
-El proyecto de referencia se distribuye bajo licencia MIT:
-
-- Copyright (c) 2024 Sebastián Torrealba.
-- Repositorio: <https://github.com/ProgramacionCompetitivaUTFSM/Handbook-USM>
-
-El aviso completo de la licencia MIT está disponible en `Handbook-USM-gigh/LICENSE` dentro de este espacio de trabajo y en el repositorio original.
+El proyecto de referencia está publicado bajo licencia MIT. Puedes consultar el repositorio original en <https://github.com/ProgramacionCompetitivaUTFSM/Handbook-USM>.

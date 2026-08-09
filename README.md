@@ -1,8 +1,8 @@
 # 📚 UCM Competitive Programming Handbook
 
-![Banner del UCM Competitive Programming Handbook](assets/banner.png)
+![Banner del UCM Competitive Programming Handbook](content/assets/banner.png)
 
-Handbook de programación competitiva desarrollado por estudiantes de la Universidad Católica del Maule (UCM). Su estructura inicial replica las tres partes y los treinta capítulos de `book.pdf`; el contenido de cada capítulo se incorporará posteriormente.
+Handbook de programación competitiva desarrollado por estudiantes de la Universidad Católica del Maule (UCM).
 
 ## Formatos
 
@@ -11,12 +11,13 @@ Handbook de programación competitiva desarrollado por estudiantes de la Univers
 
 El contenido de ambos formatos proviene de los mismos archivos Markdown. Los códigos viven una sola vez en `snippets/` y se insertan tanto en MkDocs como en Pandoc.
 
-Además del temario de `book.pdf`, el handbook incorpora complementos prácticos revisados a partir del Handbook UTFSM: flujos y matching, estructuras persistentes, strings avanzados, teoría de números, NTT, Li Chao Tree y geometría computacional. El reconocimiento de ese material está en `snippets/ATTRIBUTION.md`.
+El reconocimiento de ese material está en `snippets/ATTRIBUTION.md`.
 
 ## Estructura
 
 ```text
 content/             Partes y capítulos publicados del handbook
+content/assets/      Recursos compartidos de la web y la documentación (banner, estilos, etc.)
 snippets/            Implementaciones y ejemplos C++ futuros
 _drafts/             Material conservado fuera de la publicación
 templates/           Plantillas para conceptos y algoritmos
@@ -26,6 +27,8 @@ mkdocs.yml           Índice maestro y configuración web
 ```
 
 El orden declarado en `mkdocs.yml` también determina el orden de los capítulos del PDF. De este modo, no hay que mantener dos índices manuales.
+
+Los recursos visuales y de estilo se mantienen únicamente en `content/assets/`. El sitio MkDocs los usa con rutas relativas a `content/` y este README los referencia como `content/assets/...`; al actualizar un recurso, ambos consumen el mismo archivo.
 
 La estructura completa está documentada en [STRUCTURE.md](STRUCTURE.md).
 
@@ -44,7 +47,7 @@ make pdf
 Comandos disponibles:
 
 | Comando | Acción |
-|---|---|
+| --- | --- |
 | `make web` | Genera la web en `dist/site/` |
 | `make pdf` | Genera el PDF en `dist/` |
 | `make code-check` | Valida todos los snippets C++ |
